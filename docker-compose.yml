@@ -5,7 +5,7 @@ services:
     volumes:
       - ./data/mysql:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 4m3SxCpaQb*6LB#
+      MYSQL_ROOT_PASSWORD: oZ7S7%7`|bLk%/i'
       MYSQL_DATABASE: db_wordpress
       MYSQL_USER: user_wp
       MYSQL_PASSWORD: 9UqfqeE9#hn2@t^
@@ -18,10 +18,10 @@ services:
       - mysql
     environment:
       WORDPRESS_DB_HOST: mysql
-      MYSQL_ROOT_PASSWORD: 4m3SxCpaQb*6LB#
+      MYSQL_ROOT_PASSWORD: oZ7S7%7`|bLk%/i'
       WORDPRESS_DB_NAME: db_wordpress
       WORDPRESS_DB_USER: user_wp
-      WORDPRESS_DB_PASSWORD: 9UqfqeE9#hn2@t^
+      WORDPRESS_DB_PASSWORD: uDDH.HRPr3BZKkF~
       WORDPRESS_TABLE_PREFIX: wp_
     links:
       - mysql
@@ -44,4 +44,4 @@ services:
     ports:
       - 8081:80
     environment:
-      MYSQL_ROOT_PASSWORD: 4m3SxCpaQb*6LB#
+      MYSQL_ROOT_PASSWORD: oZ7S7%7`|bLk%/i'
