@@ -1,0 +1,13 @@
+- hosts: nginx
+  tasks:
+    - name: Install Nginx
+      package:
+        name: nginx
+        state: latest
+    - name: Copy file with owner and permissions
+      copy:
+      src: index.html
+      dest: /var/www/html/index.nginx-debian.html
+      owner: nginx
+      group: nginx
+      mode: '0644'
