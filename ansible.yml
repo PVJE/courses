@@ -6,8 +6,9 @@
         state: latest
     - name: Copy file with owner and permissions
       copy:
-      src: index.html
-      dest: /var/www/html/index.nginx-debian.html
-      owner: nginx
-      group: nginx
-      mode: '0644'
+        src: index.html
+        dest: /var/www/html/index.nginx-debian.html
+        owner: root
+        group: root
+        mode: '0644'
+        become: yes
